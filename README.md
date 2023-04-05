@@ -19,10 +19,9 @@ además de la clase Inscripción, la clase Materia y Alumno; se pide:
   <li>Codificar la solución (lenguaje a elección o pseudo-código)</li>
 </ol>
 </p>
-
 <h2>Resolucion</h2>
 <ol>
-  <li><img src="https://user-images.githubusercontent.com/48871266/230229454-a984f51a-309a-4c44-a2ce-bd6963712e9e.png"></li>
+  <li><img src="https://user-images.githubusercontent.com/48871266/230237168-9e29a6f2-119f-4179-a201-d4e40b902ec1.png"></li>
   <p>Se modeló una relación de composición de inscripción a materia ya que la primera no tendría sentido en existir si no contiene materias. Por otro lado, Alumno está asociado a Materia mediante una relación de asociación simple ya que se modelan listas de materias en las clases Alumnos. Con respecto a Inscripción y Alumno, ambas clases se conocen así que se modeló la relación con asociación bidireccional, ya que Inscripción necesita usar a Alumno para sus métodos y modificarlo y viceversa.</p>
   <li>Commiteado :)</li>
 </ol>
