@@ -19,7 +19,7 @@ public class ValidarMaterias {
 
         pepito.inscribirse(Arrays.asList(pdp));
 
-    Assert.assertTrue(pepito.getInscripcionesEnCurso().get(0).procesarInscripcion());
+    Assert.assertTrue(pepito.getInscripcionesEnCurso().get(0).aprobar());
 
     }
 
@@ -34,7 +34,7 @@ public class ValidarMaterias {
 
         pepito.inscribirse(Arrays.asList(pdp));
 
-        Assert.assertFalse(pepito.getInscripcionesEnCurso().get(0).procesarInscripcion());
+        Assert.assertFalse(pepito.getInscripcionesEnCurso().get(0).aprobar());
 
     }
 }

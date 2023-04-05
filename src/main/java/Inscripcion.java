@@ -11,7 +11,7 @@ public class Inscripcion {
         this.alumno = alumno;
     }
 
-    public boolean aprobada(Materia materia){
+    public boolean validarCorrelatividad(Materia materia){
         List<String> correlativas = materia.getCorrelativas()
                 .stream()
                 .map(Materia::getNombre)
@@ -25,8 +25,8 @@ public class Inscripcion {
         return materiasAprobadas.containsAll(correlativas);
     }
 
-    public boolean procesarInscripcion(){
-        estaAprobada = this.materias.stream().allMatch(m -> aprobada(m) == true);
+    public boolean aprobar(){
+        estaAprobada = this.materias.stream().allMatch(m -> validarCorrelatividad(m) == true);
 
         if(estaAprobada){
             alumno.getInscripcionesAprobadas().add(this);

@@ -4,7 +4,7 @@ public class Alumno {
     private List<Materia> materiasAprobadas;
     private List<Materia> materiasEnCurso;
     private List<Inscripcion> inscripcionesAprobadas;
-    private List<Inscripcion> inscripipcionesRechazadas;
+    private List<Inscripcion> inscripcionesRechazadas;
     private List<Inscripcion> inscripcionesEnCurso;
 
     private String nombre;
@@ -17,7 +17,7 @@ public class Alumno {
         this.materiasAprobadas = materiasAprobadas;
         this.materiasEnCurso = materiasEnCurso;
         this.inscripcionesAprobadas = inscripcionesAprobadas;
-        this.inscripipcionesRechazadas = inscripipcionesRechazadas;
+        this.inscripcionesRechazadas = inscripipcionesRechazadas;
         this.inscripcionesEnCurso = inscripcionesEnCurso;
     }
 
@@ -27,7 +27,7 @@ public class Alumno {
     }
 
     public List<Inscripcion> getInscripipcionesRechazadas() {
-        return inscripipcionesRechazadas;
+        return inscripcionesRechazadas;
     }
 
     public List<Materia> getMateriasEnCurso() {
