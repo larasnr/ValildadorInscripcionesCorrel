@@ -18,4 +18,14 @@ además de la clase Inscripción, la clase Materia y Alumno; se pide:
   <li>Diseñar una solución en el Paradigma Orientado a Objetos y comunicar la solución mediante un Diagrama de Clases.</li>
   <li>Codificar la solución (lenguaje a elección o pseudo-código)</li>
 </ol>
-  </p>
+</p>
+
+<h2>Resolucion</h2>
+<ol>
+  <li><img src="https://user-images.githubusercontent.com/48871266/230229454-a984f51a-309a-4c44-a2ce-bd6963712e9e.png"></li>
+  <li>Commiteado :)</li>
+  <p>Se modeló una relación de composición de inscripción a materia ya que la primera no tendría sentido en existir si no contiene materias. Por otro lado, Alumno está asociado a Materia mediante una relación de asociación simple ya que se modelan listas de materias en las clases Alumnos. Con respecto a Inscripción y Alumno, ambas clases se conocen así que se modeló la relación con asociación bidireccional, ya que Inscripción necesita usar a Alumno para sus métodos y modificarlo y viceversa.
+</ol>
+</p>
+
+ 
