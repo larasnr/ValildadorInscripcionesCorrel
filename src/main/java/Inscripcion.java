@@ -11,9 +11,17 @@ public class Inscripcion {
         this.alumno = alumno;
     }
 
+    public List<Materia> getMaterias() {
+        return materias;
+    }
 
     public boolean aprobar(){
-        estaAprobada = this.materias.stream().allMatch(m -> alumno.validarCorrelatividad(m) == true);
+        estaAprobada = this.materias.stream().allMatch(m -> alumno.validarCorrelatividad(m));
+        return estaAprobada;
+    }
+
+    public void procesarInscripcion(){
+        this.aprobar();
 
         if(estaAprobada){
             alumno.getInscripcionesAprobadas().add(this);
@@ -23,7 +31,6 @@ public class Inscripcion {
         }
         alumno.getInscripcionesEnCurso().remove(this);
 
-        return estaAprobada;
     }
 
 }

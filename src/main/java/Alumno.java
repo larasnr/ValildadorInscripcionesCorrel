@@ -11,6 +11,7 @@ public class Alumno {
     private String nombre;
 
     public Alumno(String nombre, List<Materia> materiasAprobadas, List<Materia> materiasEnCurso, List<Inscripcion> inscripcionesAprobadas, List<Inscripcion> inscripipcionesRechazadas, List<Inscripcion> inscripcionesEnCurso) {
+        this.nombre = nombre;
         this.materiasAprobadas = materiasAprobadas;
         this.materiasEnCurso = materiasEnCurso;
         this.inscripcionesAprobadas = inscripcionesAprobadas;
